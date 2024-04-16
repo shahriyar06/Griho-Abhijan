@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import { FcGoogle } from "react-icons/fc";
-import { ImGithub } from "react-icons/im";
-import { FaFacebook } from "react-icons/fa6";
 import { useContext } from "react";
 import { AuthContext } from "../../Page/FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
+import Sociallogin from "../Sociallogin/Sociallogin";
 
 const Register = () => {
 
@@ -36,7 +34,7 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text">Image Url</span>
                             </label>
-                            <input type="Url" name="photourl" placeholder="Choose Photo" className="input input-bordered" {...register("photo")} />
+                            <input type="Url" name="photourl" placeholder="Photo Url" className="input input-bordered" {...register("photo")} />
                         </div>
                         <div className="form-control">
                             <label className="label">
@@ -66,13 +64,11 @@ const Register = () => {
                                 <div className="w-1/5 text-center"><h1 >Or</h1></div>
                                 <div className="h-3 w-2/5 content-evenly"><hr /></div>
                             </div>
-                            <div className="mt-4">
-                                <button className="btn bg-transparent w-full text-lg"><FcGoogle className="text-xl" /> Continue with Google</button>
-                                <button className="btn bg-transparent w-full text-lg my-3"><ImGithub className="text-xl" /> Continue with GitHub</button>
-                                <button className="btn bg-transparent w-full text-lg"><FaFacebook className="text-xl text-[#2563eb]" /> Continue with Facebook</button>
-                            </div>
                         </div>
                     </form>
+                    <div className="mx-8 mb-5">
+                        <Sociallogin></Sociallogin>
+                    </div>
                 </div>
             </div>
         </div>
