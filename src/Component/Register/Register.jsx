@@ -1,20 +1,38 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Page/FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
 import Sociallogin from "../Sociallogin/Sociallogin";
 
 const Register = () => {
 
+    const [restriction, setrestriction] = useState('')
+    console.log(restriction)
     const { signup } = useContext(AuthContext);
     const { register, handleSubmit, formState: { errors } } = useForm();
     const navigate = useNavigate()
     const location = useLocation()
     const from = location?.state || '/'
     const onSubmit = (data) => {
+        setrestriction('')
+        const { password } = data;
+        if (password.length < 6) {
+            setrestriction('At least 6 characters')
+            return;
+        }
+        else if (!/[A-Z]/.test(password)) {
+            setrestriction('At least 1 uppercase letter');
+            return;
+        }
+        else if (!/[a-z]/.test(password)) {
+            setrestriction('At least 1 lowercase letter');
+            return;
+        }
+        
+
         signup(data.email, data.password)
             .then(result => {
-                if(result.user){
+                if (result.user) {
                     navigate(from)
                 }
             });
@@ -54,6 +72,11 @@ const Register = () => {
                             </label>
                             <input type="password" name="password" placeholder="password" className="input input-bordered"  {...register("password", { required: true })} />
                             {errors.password && <span className="text-red-600 text-sm">Password is required</span>}
+                            <div>
+                                {
+                                    restriction && <p className='text-red-600 text-sm'>{restriction}</p>
+                                }
+                            </div>
                             <div className="text-sm ml-6 mt-2 text-[#00000096]">
                                 <p>At least 6 characters</p>
                                 <p>At least 1 lowercase letter and 1 uppercase letter</p>
