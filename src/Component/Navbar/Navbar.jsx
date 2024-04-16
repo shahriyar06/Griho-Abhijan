@@ -1,7 +1,23 @@
-import { Link, NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Page/FirebaseProvider/FirebaseProvider";
 
 
 const Navbar = () => {
+
+    const { signout, user } = useContext(AuthContext);
+    const navigate = useNavigate()
+    const location = useLocation()
+    const from = location?.state || '/'
+
+    const handlesociallogout = logoutProvider =>{
+        logoutProvider()
+        .then(result => {
+            if(result.user){
+                navigate(from)
+            }
+        })
+    }
 
     const Navbar = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -28,8 +44,14 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/login' className="btn btn-outline text-[#4ade80] hover:text-[#FFFFFF] hover:bg-[#4ade80] hover:border-[#4ade80] lg:text-lg mr-5">Log In</Link>
-                    <Link to='/register' className="btn btn-outline text-[#4ade80] hover:text-[#FFFFFF] hover:bg-[#4ade80] hover:border-[#4ade80] text-lg">Register</Link>
+                    {
+                        user ? <button onClick={() => handlesociallogout(signout)}><Link  className="btn btn-outline text-[#4ade80] hover:text-[#FFFFFF] hover:bg-[#4ade80] hover:border-[#4ade80] lg:text-lg mr-5">Log Out</Link></button> 
+                            :
+                            <div>
+                                <Link to='/login' className="btn btn-outline text-[#4ade80] hover:text-[#FFFFFF] hover:bg-[#4ade80] hover:border-[#4ade80] lg:text-lg mr-5">Log In</Link>
+                                <Link to='/register' className="btn btn-outline text-[#4ade80] hover:text-[#FFFFFF] hover:bg-[#4ade80] hover:border-[#4ade80] text-lg">Register</Link>
+                            </div>
+                    }
                 </div>
             </div>
         </div>
