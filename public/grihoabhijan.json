@@ -1,0 +1,160 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Luxurious Family Villa",
+        "image": "https://i.ibb.co/6XMKff6/Luxurious-Family-Villa.jpg",
+        "segment_name": "Single-family homes",
+        "description": "Experience luxury living in this spacious family villa with breathtaking views and modern amenities.",
+        "price": "৳20000000",
+        "status": "Sale",
+        "area": "5000 sq ft",
+        "location": "Dhaka",
+        "build-year":"2022",
+        "facilities": [
+            "5 bedrooms",
+            "4 bathrooms",
+            "Swimming pool",
+            "Garden"
+        ]
+    },
+    {
+        "id": 2,
+        "estate_title": "Modern Townhouse in Gulshan",
+        "image": "https://i.ibb.co/vcz9sHg/Modern-Townhouse-Gulshan.jpg",
+        "segment_name": "Townhouses",
+        "description": "Contemporary townhouse featuring sleek design, located in the upscale area of Gulshan.",
+        "price": "৳12000000",
+        "status": "Sale",
+        "area": "3000 sq ft",
+        "location": "Dhaka",
+        "build-year":"2024",
+        "facilities": [
+            "3 bedrooms",
+            "3.5 bathrooms",
+            "Rooftop terrace",
+            "Parking"
+        ]
+    },
+    {
+        "id": 3,
+        "estate_title": "Stylish Apartment in Banani",
+        "image": "https://i.ibb.co/ZHFj326/Stylish-Apartment-Banani.jpg",
+        "segment_name": "Apartments",
+        "description": "Chic apartment situated in the heart of Banani, offering convenience and comfort.",
+        "price": "৳25000/month",
+        "status": "Rent",
+        "area": "1200 sq ft",
+        "location": "Dhaka",
+        "build-year":"2016",
+        "facilities": [
+            "2 bedrooms",
+            "2 bathrooms",
+            "Balcony",
+            "Gym"
+        ]
+    },
+    {
+        "id": 4,
+        "estate_title": "Student Housing near DU",
+        "image": "https://i.ibb.co/hV4DSvs/Student-Housing-DU.jpg",
+        "segment_name": "Student housing",
+        "description": "Ideal accommodation for students near Dhaka University, with affordable rates and shared amenities.",
+        "price": "৳3000/month (per bed)",
+        "status": "Rent",
+        "area": "Shared",
+        "location": "Dhaka",
+        "build-year":"2010",
+        "facilities": [
+            "Furnished rooms",
+            "Common area",
+            "Laundry facilities"
+        ]
+    },
+    {
+        "id": 5,
+        "estate_title": "Senior Living Community in Uttara",
+        "image": "https://i.ibb.co/bWmGztG/Senior-Community-Uttara.jpg",
+        "segment_name": "Senior living communities",
+        "description": "Retirement community offering a serene and supportive environment for seniors, with various activities and services.",
+        "price": "৳15000/month",
+        "status": "Rent",
+        "area": "1000 sq ft (avg)",
+        "location": "Dhaka",
+        "build-year":"2012",
+        "facilities": [
+            "Independent living",
+            "Assisted living",
+            "Medical care",
+            "Recreational facilities"
+        ]
+    },
+    {
+        "id": 6,
+        "estate_title": "Beachfront Vacation Villa",
+        "image": "https://i.ibb.co/gv5s8vm/Beachfront-Vacation-Villa.jpg",
+        "segment_name": "Vacation rentals",
+        "description": "Escape to this stunning beachfront villa for a relaxing vacation with family and friends, offering luxury and comfort.",
+        "price": "৳10000/night",
+        "status": "Rent",
+        "area": "3000 sq ft",
+        "location": "Cox's Bazar",
+        "build-year":"2021",
+        "facilities": [
+            "Beach access",
+            "Private pool",
+            "Outdoor dining"
+        ]
+    },
+    {
+        "id": 7,
+        "estate_title": "Family Home with Garden",
+        "image": "https://i.ibb.co/p3GhSLc/Family-Home-with-Garden.jpg",
+        "segment_name": "Single-family homes",
+        "description": "Charming family home with a beautiful garden, perfect for creating lasting memories.",
+        "price": "৳7000000",
+        "status": "Sale",
+        "area": "2500 sq ft",
+        "location": "Chittagong",
+        "build-year":"2017",
+        "facilities": [
+            "4 bedrooms",
+            "3 bathrooms",
+            "Spacious backyard"
+        ]
+    },
+    {
+        "id": 8,
+        "estate_title": "City Center Apartment",
+        "image": "https://i.ibb.co/HHLM7Md/City-Center-Apartment.jpg",
+        "segment_name": "Apartments",
+        "description": "Conveniently located apartment in the heart of the city, offering modern living and easy access to amenities.",
+        "price": "৳2000000",
+        "status": "Sale",
+        "area": "900 sq ft",
+        "location": "Sylhet",
+        "build-year":"2023",
+        "facilities": [
+            "1 bedroom",
+            "1 bathroom",
+            "Fitness center",
+            "Parking"
+        ]
+    },
+    {
+        "id": 9,
+        "estate_title": "Scenic Mountain Retreat",
+        "image": "https://i.ibb.co/QJM7GWG/mountain-view.jpg",
+        "segment_name": "Vacation rentals",
+        "description": "Escape to the mountains in this cozy retreat, surrounded by nature and tranquility.",
+        "price": "৳3000/night",
+        "status": "Rent",
+        "area": "2000 sq ft",
+        "location": "Bandarban",
+        "build-year":"2019",
+        "facilities": [
+            "Mountain views",
+            "Fireplace",
+            "Hiking trails"
+        ]
+    }
+]
