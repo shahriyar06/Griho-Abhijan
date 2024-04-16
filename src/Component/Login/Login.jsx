@@ -2,14 +2,30 @@ import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { ImGithub } from "react-icons/im";
 import { FaFacebook } from "react-icons/fa6";
+import { useContext } from "react";
+import { AuthContext } from "../../Page/FirebaseProvider/FirebaseProvider";
+import { useForm } from "react-hook-form";
 
 
 const Login = () => {
+    const { signin } = useContext(AuthContext);
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = (data) => {
+        signin(data.email, data.password)
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch((error) => {
+                console.error(error)
+            });
+            
+    }
+
     return (
         <div>
             <div className="hero min-h-screen ">
                 <div className="card shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
-                    <form className="card-body">
+                    <form onSubmit={handleSubmit(onSubmit)}  className="card-body">
                         <div className="text-center mb-3">
                             <h1 className="text-3xl font-medium">Log in to your account</h1>
                             <p className="text-sm">Or, <span className="text-[#2563eb]"><Link to='/register'>create an account</Link> </span></p>
@@ -18,13 +34,15 @@ const Login = () => {
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                            <input type="email" name="email" placeholder="email" className="input input-bordered" {...register("email", { required: true })} />
+                            {errors.email && <span className="text-red-600 text-sm">Email is required</span>}
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                            <input type="password" name="password" placeholder="password" className="input input-bordered" {...register("password", { required: true })} />
+                            {errors.password && <span className="text-red-600 text-sm">Password is required</span>}
                             <label className="label">
                                 <Link className="label-text-alt link link-hover text-[#60a5fa]">Forgot password?</Link>
                             </label>
