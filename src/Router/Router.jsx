@@ -4,6 +4,7 @@ import Home from "../Page/Home/Home";
 import Login from "../Component/Login/Login";
 import Register from "../Component/Register/Register";
 import Error from "../Page/Error/Error";
+import Estatedetails from "../Page/Estatedetails/Estatedetails";
 
 
 
@@ -27,6 +28,12 @@ const router = createBrowserRouter([
         {
             path: '/register',
             element: <Register></Register>
+        },
+        {
+          path: '/estate/:Id',
+          element: <Estatedetails></Estatedetails>,
+          loader: () => fetch('https://shahriyar06.github.io/Griho-abijan/grihoabijan.json')
+          // loader: () => fetch('grihoabijan.json')
         }
       ],
     },

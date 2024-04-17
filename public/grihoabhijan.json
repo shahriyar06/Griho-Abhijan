@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "Id": 1,
         "estate_title": "Luxurious Family Villa",
         "image": "https://i.ibb.co/6XMKff6/Luxurious-Family-Villa.jpg",
         "segment_name": "Single-family homes",
@@ -18,7 +18,7 @@
         ]
     },
     {
-        "id": 2,
+        "Id": 2,
         "estate_title": "Modern Townhouse in Gulshan",
         "image": "https://i.ibb.co/vcz9sHg/Modern-Townhouse-Gulshan.jpg",
         "segment_name": "Townhouses",
@@ -36,7 +36,7 @@
         ]
     },
     {
-        "id": 3,
+        "Id": 3,
         "estate_title": "Stylish Apartment in Banani",
         "image": "https://i.ibb.co/ZHFj326/Stylish-Apartment-Banani.jpg",
         "segment_name": "Apartments",
@@ -54,7 +54,7 @@
         ]
     },
     {
-        "id": 4,
+        "Id": 4,
         "estate_title": "Student Housing near DU",
         "image": "https://i.ibb.co/hV4DSvs/Student-Housing-DU.jpg",
         "segment_name": "Student housing",
@@ -71,7 +71,7 @@
         ]
     },
     {
-        "id": 5,
+        "Id": 5,
         "estate_title": "Senior Living Community in Uttara",
         "image": "https://i.ibb.co/bWmGztG/Senior-Community-Uttara.jpg",
         "segment_name": "Senior living communities",
@@ -89,7 +89,7 @@
         ]
     },
     {
-        "id": 6,
+        "Id": 6,
         "estate_title": "Beachfront Vacation Villa",
         "image": "https://i.ibb.co/gv5s8vm/Beachfront-Vacation-Villa.jpg",
         "segment_name": "Vacation rentals",
@@ -106,7 +106,7 @@
         ]
     },
     {
-        "id": 7,
+        "Id": 7,
         "estate_title": "Family Home with Garden",
         "image": "https://i.ibb.co/p3GhSLc/Family-Home-with-Garden.jpg",
         "segment_name": "Single-family homes",
@@ -123,7 +123,7 @@
         ]
     },
     {
-        "id": 8,
+        "Id": 8,
         "estate_title": "City Center Apartment",
         "image": "https://i.ibb.co/HHLM7Md/City-Center-Apartment.jpg",
         "segment_name": "Apartments",
@@ -141,7 +141,7 @@
         ]
     },
     {
-        "id": 9,
+        "Id": 9,
         "estate_title": "Scenic Mountain Retreat",
         "image": "https://i.ibb.co/QJM7GWG/mountain-view.jpg",
         "segment_name": "Vacation rentals",

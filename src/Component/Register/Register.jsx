@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../Page/FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
 import Sociallogin from "../Sociallogin/Sociallogin";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
 
@@ -40,6 +41,9 @@ const Register = () => {
 
     return (
         <div className="mb-10">
+            <Helmet>
+                <title>Griho-abhijan-register</title>
+            </Helmet>
             <div className="hero min-h-screen ">
                 <div className="card shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
                     <form onSubmit={handleSubmit(onSubmit)} className="card-body">
