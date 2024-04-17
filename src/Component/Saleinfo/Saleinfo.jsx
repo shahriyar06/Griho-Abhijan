@@ -4,6 +4,7 @@ import { IoLocationSharp } from "react-icons/io5";
 
 const Saleinfo = ({saleLists}) => {
     const { Id } = saleLists;
+    console.log(Id)
     return (
         <div>
             <div className="card rounded-3xl border-2 border-[#c2c2c2]">
@@ -23,7 +24,7 @@ const Saleinfo = ({saleLists}) => {
                         <h1 className="flex items-center gap-2"><IoLocationSharp />{saleLists.location}</h1>
                     </div>
 
-                    <Link to={`/saleLists/${Id}`} className="btn btn-outline text-[#4ade80] hover:text-[#FFFFFF] hover:bg-[#4ade80] hover:border-[#4ade80] lg:text-lg mr-5">View Property </Link>
+                    <Link to={`/estate/${Id}`} className="btn btn-outline text-[#4ade80] hover:text-[#FFFFFF] hover:bg-[#4ade80] hover:border-[#4ade80] lg:text-lg mr-5">View Property</Link>
                 </div>
             </div>
 

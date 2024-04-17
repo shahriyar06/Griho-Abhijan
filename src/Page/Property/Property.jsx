@@ -2,6 +2,7 @@
 import Estate from "../../Component/Estate/Estate";
 import Sale from "../../Component/Sale/Sale";
 import { Helmet } from "react-helmet-async";
+import Rent from "../../firebase/Rent/Rent";
 
 
 const Property = () => {
@@ -24,7 +25,7 @@ const Property = () => {
 
                 <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Rent" />
                 <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
-                    
+                    <Rent></Rent>
                 </div>
             </div>
         </div>
