@@ -9,7 +9,7 @@
         "status": "Sale",
         "area": "5000 sq ft",
         "location": "Dhaka",
-        "build-year":"2022",
+        "build_year":"2022",
         "facilities": [
             "5 bedrooms",
             "4 bathrooms",
@@ -27,7 +27,7 @@
         "status": "Sale",
         "area": "3000 sq ft",
         "location": "Dhaka",
-        "build-year":"2024",
+        "build_year":"2024",
         "facilities": [
             "3 bedrooms",
             "3.5 bathrooms",
@@ -45,7 +45,7 @@
         "status": "Rent",
         "area": "1200 sq ft",
         "location": "Dhaka",
-        "build-year":"2016",
+        "build_year":"2016",
         "facilities": [
             "2 bedrooms",
             "2 bathrooms",
@@ -63,7 +63,7 @@
         "status": "Rent",
         "area": "Shared",
         "location": "Dhaka",
-        "build-year":"2010",
+        "build_year":"2010",
         "facilities": [
             "Furnished rooms",
             "Common area",
@@ -80,7 +80,7 @@
         "status": "Rent",
         "area": "1000 sq ft (avg)",
         "location": "Dhaka",
-        "build-year":"2012",
+        "build_year":"2012",
         "facilities": [
             "Independent living",
             "Assisted living",
@@ -98,7 +98,7 @@
         "status": "Rent",
         "area": "3000 sq ft",
         "location": "Cox's Bazar",
-        "build-year":"2021",
+        "build_year":"2021",
         "facilities": [
             "Beach access",
             "Private pool",
@@ -115,7 +115,7 @@
         "status": "Sale",
         "area": "2500 sq ft",
         "location": "Chittagong",
-        "build-year":"2017",
+        "build_year":"2017",
         "facilities": [
             "4 bedrooms",
             "3 bathrooms",
@@ -132,7 +132,7 @@
         "status": "Sale",
         "area": "900 sq ft",
         "location": "Sylhet",
-        "build-year":"2023",
+        "build_year":"2023",
         "facilities": [
             "1 bedroom",
             "1 bathroom",
@@ -150,7 +150,7 @@
         "status": "Rent",
         "area": "2000 sq ft",
         "location": "Bandarban",
-        "build-year":"2019",
+        "build_year":"2019",
         "facilities": [
             "Mountain views",
             "Fireplace",
