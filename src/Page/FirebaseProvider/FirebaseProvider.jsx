@@ -62,7 +62,7 @@ const FirebaseProvider = ({children}) => {
             } 
           });
           return () => unsubscribe();
-    },[])
+    },[user])
 
 
     const allvalue = {

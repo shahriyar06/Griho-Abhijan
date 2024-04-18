@@ -4,14 +4,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
+import AOS  from 'aos';
+import 'aos/dist/aos.css'
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
+import { useEffect } from 'react';
 
 const Banner = () => {
+    useEffect(() => {
+        AOS.init();
+    },[])
     return (
-        <div className=''>
+        <div className='' data-aos="fade-down" data-aos-duration="2500">
             <Swiper
                 pagination={{
                     type: 'fraction',

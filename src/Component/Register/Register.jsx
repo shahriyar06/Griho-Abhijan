@@ -19,7 +19,7 @@ const Register = () => {
     const location = useLocation()
     const from = location?.state || '/'
     const onSubmit = (data) => {
-        data.preventdefault();
+        
         const { email, password, name, photo, phone } = data
         setrestriction('')
         if (password.length < 6) {
@@ -73,12 +73,6 @@ const Register = () => {
                                 <span className="label-text">Image Url</span>
                             </label>
                             <input type="url" name="photourl" placeholder="Photo Url" className="input input-bordered" {...register("photo")} />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Phone</span>
-                            </label>
-                            <input type="text" name="phone" placeholder="Phone number" className="input input-bordered" {...register("phone")} />
                         </div>
                         <div className="form-control">
                             <label className="label">
