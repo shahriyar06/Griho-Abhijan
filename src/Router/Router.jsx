@@ -8,6 +8,7 @@ import Estatedetailinfo from "../Page/Estatedetailinfo/Estatedetailinfo";
 import Property from "../Page/Property/Property";
 import Privateroute from './../Page/Privateroute/Privateroute';
 import Profile from "../Page/Profile/Profile";
+import Review from "../Page/Review/Review";
 
 
 
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         {
             path: '/register',
             element: <Register></Register>,
+        },
+        {
+            path: '/userreview',
+            element: <Privateroute><Review></Review></Privateroute>,
         },
         {
           path: '/estate/:id',

@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "name": "Emily Johnson",
+      "image": "https://i.ibb.co/tH6PKSC/men.jpg",
+      "rating": 5,
+      "comment": "I had an amazing experience using this real estate website! The search filters were comprehensive, and I found my dream home within a week. The listing details were accurate, and the photos provided a clear representation of each property. Highly recommended!"
+    },
+    {
+      "id": 2,
+      "name": "Michael Smith",
+      "image": "https://i.ibb.co/tH6PKSC/men.jpg",
+      "rating": 4,
+      "comment": "Overall, I found the website very user-friendly and intuitive. It was easy to navigate through the listings and refine my search criteria. The only downside was that some listings lacked detailed descriptions, which made it hard to assess whether they were suitable or not."
+    },
+    {
+      "id": 3,
+      "name": "Jessica Brown",
+      "image": "https://i.ibb.co/tH6PKSC/men.jpg",
+      "rating": 3,
+      "comment": "Decent website, but it could use some improvements. The search results often returned properties that didn't match my criteria, and there were occasional glitches when loading listings. However, the customer service was responsive, and they helped me resolve issues quickly."
+    },
+    {
+      "id": 4,
+      "name": "David Wilson",
+      "image": "https://i.ibb.co/tH6PKSC/men.jpg",
+      "rating": 5,
+      "comment": "This website exceeded my expectations! I appreciated the variety of listings available and the option to save favorites for future reference. The virtual tours provided a comprehensive view of each property, which saved me time from scheduling multiple visits. Highly satisfied with my experience."
+    },
+    {
+      "id": 5,
+      "name": "Sarah Martinez",
+      "image": "https://i.ibb.co/gSY179M/person.jpg",
+      "rating": 2,
+      "comment": "I found the website to be quite disappointing. The search functionality was limited, and the interface felt outdated. Additionally, many listings were outdated or already sold, which was frustrating. I ended up using another platform to find my new home."
+    }
+]
