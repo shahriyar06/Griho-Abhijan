@@ -34,7 +34,7 @@ const Footer = () => {
                     <div className="mb-8 lg:col-span-2">
                         <h1 className="text-[#b19777] text-lg text-center lg:text-left">VISIT</h1>
                         <hr className="border-[#888] mt-3 mb-5" />
-                        <p className="text-[#888] text-lg">235/2 bangla Tower,</p>
+                        <p className="text-[#888] text-lg">235/2 Bangla Tower,</p>
                         <p className="text-[#888] text-lg my-5">Sonar Bangla Road,</p><p className="text-[#888] text-lg">Dhaka-1212,</p><p className="text-[#888] text-lg mt-5">Bangladesh .</p>
                     </div>
                     <div className="lg:col-span-2">

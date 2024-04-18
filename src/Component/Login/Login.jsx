@@ -1,12 +1,14 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Page/FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
 import Sociallogin from "../Sociallogin/Sociallogin";
 import { Helmet } from "react-helmet-async";
+import { FaEyeSlash, FaEye } from "react-icons/fa";
 
 
 const Login = () => {
+    const [showpassword, setshowpassword] = useState(false);
     const { signin } = useContext(AuthContext);
     const { register, handleSubmit, formState: { errors } } = useForm();
     const navigate = useNavigate()
@@ -16,7 +18,7 @@ const Login = () => {
 
         signin(data.email, data.password)
             .then(result => {
-                if(result.user){
+                if (result.user) {
                     navigate(from)
                 }
             })
@@ -46,14 +48,19 @@ const Login = () => {
                             {errors.email && <span className="text-red-600 text-sm">Email is required</span>}
                         </div>
                         <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Password</span>
-                            </label>
-                            <input type="password" name="password" placeholder="password" className="input input-bordered" {...register("password", { required: true })} />
-                            {errors.password && <span className="text-red-600 text-sm">Password is required</span>}
-                            <label className="label">
-                                <Link className="label-text-alt link link-hover text-[#60a5fa]">Forgot password?</Link>
-                            </label>
+                                <label className="label">
+                                    <span className="label-text">Password</span>
+                                </label>
+                                <input type={showpassword ? "text" : "Password"} name="password" placeholder="password" className="input input-bordered" {...register("password", { required: true })} />
+                                {errors.password && <span className="text-red-600 text-sm">Password is required</span>}
+                                <h1 className="" onClick={() => setshowpassword(!showpassword)}>
+                                    {
+                                        showpassword ? <FaEyeSlash className="relative left-96 bottom-8" /> : <FaEye className="relative left-96 bottom-8" />
+                                    }
+                                </h1>
+                                <label className="label">
+                                    <Link className="label-text-alt link link-hover text-[#60a5fa]">Forgot password?</Link>
+                                </label>
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary text-lg">Login</button>

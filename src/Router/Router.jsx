@@ -7,6 +7,7 @@ import Error from "../Page/Error/Error";
 import Estatedetailinfo from "../Page/Estatedetailinfo/Estatedetailinfo";
 import Property from "../Page/Property/Property";
 import Privateroute from './../Page/Privateroute/Privateroute';
+import Profile from "../Page/Profile/Profile";
 
 
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
         {
             path: '/property',
             element: <Privateroute><Property></Property></Privateroute>,
+        },
+        {
+            path: '/profile',
+            element: <Privateroute><Profile></Profile></Privateroute>,
         },
         {
             path: '/login',

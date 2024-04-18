@@ -5,3 +5,12 @@
 .background-image {
     background-image: url('../public/Image/patrick-perkins-3wylDrjxH-E-unsplash.jpg');
   }
+.bg-banner-motijil{
+  background-image: url('https://i.ibb.co/Q8vTwJS/motijil.jpg');
+}
+.bg-banner-chittagong{
+  background-image: url('https://i.ibb.co/BwDCwzc/chittagong.jpg');
+}
+.bg-banner-dhaka{
+  background-image: url('https://i.ibb.co/mTQ4dQW/img.jpg');
+}
